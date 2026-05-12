@@ -15,6 +15,14 @@ run/main_scene="uid://2jrri2p51i40"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PlayerManager="*uid://fsm5jhas2pt0"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 forward={

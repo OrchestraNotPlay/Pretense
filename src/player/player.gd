@@ -17,11 +17,13 @@ func _process(delta: float) -> void:
 	
 	if ray.is_colliding():
 		var pickable_item = ray.get_collider()
-		print(pickable_item)
 		if pickable_item is pickable:
+			PlayerManager.can_pickup = true
 			if Input.is_action_just_pressed("interact"):
 				pickable_item.reparent(hand)
 				pickable_item.position = hand.position
+	else:
+		PlayerManager.can_pickup = false
 
 func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.

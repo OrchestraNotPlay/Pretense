@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://2jrri2p51i40"]
 
 [ext_resource type="PackedScene" uid="uid://cc08j7wjdi5as" path="res://src/player/player.tscn" id="1_03ler"]
-[ext_resource type="Script" uid="uid://bvvv3wcdf2wah" path="res://src/sandbox/item.gd" id="2_piqo3"]
+[ext_resource type="Script" uid="uid://tmjrsb3662k6" path="res://src/sandbox/item.gd" id="2_piqo3"]
+[ext_resource type="PackedScene" uid="uid://c6gbq1fs3rih8" path="res://src/HUD/hud.tscn" id="3_rgnnk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_03ler"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -63,3 +64,7 @@ collision_layer = 3
 collision_mask = 3
 radius = 0.08529379
 script = ExtResource("2_piqo3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=115696191]
+
+[node name="HUD" parent="CanvasLayer" unique_id=79342868 instance=ExtResource("3_rgnnk")]
