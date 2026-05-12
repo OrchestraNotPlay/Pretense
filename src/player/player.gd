@@ -5,6 +5,7 @@ extends CharacterBody3D
 
 @onready var neck := $neck
 @onready var camera := $neck/Camera3D
+@onready var ray := $neck/Camera3D/RayCast3D
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
