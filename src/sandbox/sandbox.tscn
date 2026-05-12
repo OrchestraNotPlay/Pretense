@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://2jrri2p51i40"]
 
 [ext_resource type="PackedScene" uid="uid://cc08j7wjdi5as" path="res://src/player/player.tscn" id="1_03ler"]
-[ext_resource type="Script" uid="uid://tmjrsb3662k6" path="res://src/sandbox/item.gd" id="2_piqo3"]
+[ext_resource type="Script" uid="uid://bvvv3wcdf2wah" path="res://src/sandbox/item.gd" id="2_piqo3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_03ler"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -60,6 +60,6 @@ size = Vector3(1, 1, 2.8945313)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7980418, 0.79690874, 1.2692353)
 use_collision = true
 collision_layer = 3
-collision_mask = 0
+collision_mask = 3
 radius = 0.08529379
 script = ExtResource("2_piqo3")

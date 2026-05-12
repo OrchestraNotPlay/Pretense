@@ -6,6 +6,7 @@ extends CharacterBody3D
 @onready var neck := $neck
 @onready var camera := $neck/Camera3D
 @onready var ray := $neck/Camera3D/RayCast3D
+@onready var hand := $neck/Camera3D/hand
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -13,6 +14,14 @@ func _ready():
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	
+	if ray.is_colliding():
+		var pickable_item = ray.get_collider()
+		print(pickable_item)
+		if pickable_item is pickable:
+			if Input.is_action_just_pressed("interact"):
+				pickable_item.reparent(hand)
+				pickable_item.position = hand.position
 
 func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.

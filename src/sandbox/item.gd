@@ -1,4 +1,4 @@
-extends interactable
+extends pickable
 
-func interact():
+func pick():
 	pass

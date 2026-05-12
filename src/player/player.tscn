@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cc08j7wjdi5as"]
 
-[ext_resource type="Script" uid="uid://c00r7pcew7fks" path="res://src/player/player.gd" id="1_4anbu"]
+[ext_resource type="Script" uid="uid://b0vwi5xw1274b" path="res://src/player/player.gd" id="1_4anbu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qnmj6"]
 radius = 0.31884766
@@ -27,7 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.47802752, 0)
 
 [node name="RayCast3D" type="RayCast3D" parent="neck/Camera3D" unique_id=1178742445]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 5.028426e-08, -0.26773506)
-collision_mask = 2
+collision_mask = 3
 
 [node name="hand" type="Node3D" parent="neck/Camera3D" unique_id=564959217]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40360767, -0.1910769, -0.5133432)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14977758, -0.08830339, -0.20411679)
